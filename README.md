@@ -10,23 +10,22 @@ A registry for Gulp 4 ([Undertaker](https://github.com/gulpjs/undertaker))
 ### How to work
 
 ```
-
 commonConf |> taskConfFn => taskConf |> taskDefFn => task
-
 ```
 
 #### Gulp Structure
 
 ```
-
 gulpfile.babel.js/
 config/
   copy.js
 tasks/
   copy.js
 index.js
-
 ```
+
+** filename should be prefer the task name **
+
 
 ```js
 // config/copy.js
@@ -97,7 +96,7 @@ without changing `TaskDefFn`
 
 ex.
 
-```
+```js
 export default (conf) => {
   return {
     files: [{
